@@ -57,7 +57,7 @@ Las clases en Tailwind CSS son utilidades CSS predefinidas que puedes usar direc
 
 Estos son sólo algunas de las clases y ejemplos, pero el ideal sería investigar y conocer otras opciones en la documentación oficial:
 
-###📚 Sitio oficial de la documentación:
+### 📚 Sitio oficial de la documentación:
 
 👉 https://tailwindcss.com/docs
 
