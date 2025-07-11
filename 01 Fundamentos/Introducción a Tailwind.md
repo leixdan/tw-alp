@@ -15,3 +15,61 @@ Contras 🤨
 2. HTML cargado: Se pueden sumar varias clases en el código HTML.
 3. Sin componentes viuales: Se deben crear desde cero, esto puede llevar tiempo.
 
+Para producción en curso y si no se tiene instalado directamente tailwind, se puede usar el método CDN mientras se aprende.
+
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+```
+
+Limitaciones:
+El CSS cargado es completo (sin purga), por lo que es pesado
+
+No puedes personalizar (colores, fuentes, plugins) fácilmente
+
+No recomendado para apps grandes en producción
+
+## Clases y Ejemplos comunes 📚
+Las clases en Tailwind CSS son utilidades CSS predefinidas que puedes usar directamente en el HTML para aplicar estilos. En lugar de escribir CSS personalizado, Tailwind ofrece muchas clases pequeñas que hacen cosas específicas, como:
+
+* text-center → para centrar el texto
+* bg-blue-500 → para poner un fondo azul con intensidad 500
+* p-4 → para aplicar padding (relleno) de 1 rem (espaciado)
+* flex → para aplicar display: flex;
+* y muchas más...
+
+| Clase Tailwind     | Ejemplo en código                                    | Uso común                                                         |
+| ------------------ | ---------------------------------------------------- | ----------------------------------------------------------------- |
+| `text-center`      | `<p class="text-center">Texto</p>`                   | Centrar el texto                                                  |
+| `bg-blue-500`      | `<div class="bg-blue-500 p-4"></div>`                | Fondo azul con intensidad 500                                     |
+| `p-4`              | `<div class="p-4">Contenido</div>`                   | Padding (relleno) de 1 rem en todos lados                         |
+| `m-2`              | `<div class="m-2">Caja</div>`                        | Margin (margen) de 0.5 rem en todos lados                         |
+| `flex`             | `<div class="flex"><div>1</div><div>2</div></div>`   | Aplica `display: flex` para layout flexible                       |
+| `justify-center`   | `<div class="flex justify-center">...</div>`         | Centra elementos en el eje horizontal dentro de un flex container |
+| `items-center`     | `<div class="flex items-center">...</div>`           | Centra elementos verticalmente en flex container                  |
+| `rounded`          | `<button class="rounded bg-gray-200">Botón</button>` | Bordes redondeados                                                |
+| `hover:bg-red-500` | `<button class="hover:bg-red-500">Hover me</button>` | Cambia fondo al pasar el mouse (hover)                            |
+| `w-full`           | `<input class="w-full" />`                           | Ancho completo del contenedor padre                               |
+| `text-xl`          | `<h1 class="text-xl">Título</h1>`                    | Tamaño de texto extra grande                                      |
+| `font-bold`        | `<span class="font-bold">Negrita</span>`             | Texto en negrita                                                  |
+| `overflow-hidden`  | `<div class="overflow-hidden">...</div>`             | Oculta contenido que se sale del contenedor                       |
+| `grid`             | `<div class="grid grid-cols-3 gap-4">...</div>`      | Layout en grilla con 3 columnas y espacio entre elementos         |
+
+
+Estos son sólo algunas de las clases y ejemplos, pero el ideal sería investigar y conocer otras opciones en la documentación oficial:
+
+###📚 Sitio oficial de la documentación:
+
+👉 https://tailwindcss.com/docs
+
+
+## Gráficas y Dashboards 📶
+
+Para dashboards con Tailwind y Alpine.js:
+
+1. Usa grids y flexbox (grid, flex, gap-4, justify-between, etc.) para estructurar el layout.
+2. Para gráficos puedes integrar librerías JS como Chart.js, ApexCharts o D3.js y estilarlas con Tailwind.
+3. Usa componentes visuales simples con sombras, bordes y colores que Tailwind facilita:
+4. Cartas (card con bg-white rounded shadow p-4)
+5. Tablas estilizadas (table-auto, border-collapse, border, etc.)
+6. Puedes controlar interactividad y estados con Alpine.js para filtros, toggles o actualizaciones en vivo.
+
