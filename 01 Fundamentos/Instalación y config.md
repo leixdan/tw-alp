@@ -27,18 +27,31 @@ npx tailwindcss init
 ## 🗂️ Estructura de proyecto base
 
 mi-proyecto/
+
 ├── assets/
+
 │   ├── input.css          # Instrucciones para Tailwind (@tailwind ...)
+
 │   └── js/
+
 │       └── alpine.js      # Alpine.js (opcional)
+
 ├── public/
+
 │   └── output.css         # CSS generado por Tailwind (no lo edites)
+
 ├── templates/
+
 │   └── index.tmpl         # Tu plantilla HTML base (renderizada por Go)
+
 ├── main.go                # Servidor Go
+
 ├── tailwind.config.js     # Configuración de Tailwind
+
 ├── package.json           # Configuración de NPM
+
 ├── Makefile               # Scripts automáticos (desarrollo y build)
+
 └── README.md              # Esta guía
 
 ### 🧾 ¿Qué contiene cada parte?
