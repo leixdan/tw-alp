@@ -2,6 +2,8 @@
 
 Tailwind CSS es un framework de CSS de utilidad que te permite construir interfaces modernas y responsivas rápidamente, directamente en tu HTML. A diferencia de frameworks como Bootstrap, Tailwind no ofrece componentes prehechos, sino clases utilitarias para construir tus propios diseños desde cero.
 
+Super importante: instalar la extensión oficial de tailwind: ![IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
 ## Pros y contras ✅❗
 
 Pros 😎
