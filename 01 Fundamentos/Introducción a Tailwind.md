@@ -63,15 +63,3 @@ Estos son sólo algunas de las clases y ejemplos, pero el ideal sería investiga
 
 👉 https://tailwindcss.com/docs
 
-
-## Gráficas y Dashboards 📶
-
-Para dashboards con Tailwind y Alpine.js:
-
-1. Usa grids y flexbox (grid, flex, gap-4, justify-between, etc.) para estructurar el layout.
-2. Para gráficos puedes integrar librerías JS como Chart.js, ApexCharts o D3.js y estilarlas con Tailwind.
-3. Usa componentes visuales simples con sombras, bordes y colores que Tailwind facilita:
-4. Cartas (card con bg-white rounded shadow p-4)
-5. Tablas estilizadas (table-auto, border-collapse, border, etc.)
-6. Puedes controlar interactividad y estados con Alpine.js para filtros, toggles o actualizaciones en vivo.
-
