@@ -3,6 +3,29 @@
 Tailwind CSS es más que colorcitos y hacer que el `html` se vea monstruoso (haha), en este documento haré un repaso por las clases empezando desde la estructura, seguida de diseño, interacción y más:
 
 ## **Estructura y organización**
+### Estructura de la página
+
+| Clase             | Se usa para                                | Ejemplo                                     |
+| ----------------- | ------------------------------------------ | ------------------------------------------- |
+| `h-{valor}`       | Definir altura                             | `h-20` → altura de `5rem`                   |
+| `w-{valor}`       | Definir anchura                            | `w-1/2` → 50% del ancho del contenedor      |
+| `h-screen`        | Altura completa del viewport               | `body class="h-screen"`                     |
+| `w-screen`        | Ancho completo del viewport                | `div class="w-screen"`                      |
+| `min-h-{valor}`   | Altura mínima                              | `min-h-screen` → mínimo: altura de pantalla |
+| `max-w-{valor}`   | Ancho máximo                               | `max-w-xl` → ancho máximo de `36rem`        |
+| `m-{valor}`       | Margen en todos los lados                  | `m-4` → `1rem` de margen                    |
+| `mt-{valor}`      | Margen superior                            | `mt-8` → `2rem` de margen arriba            |
+| `mx-auto`         | Centrar horizontalmente (auto left/right)  | `div class="mx-auto"`                       |
+| `p-{valor}`       | Padding (relleno) en todos los lados       | `p-6` → `1.5rem` de padding                 |
+| `px-{valor}`      | Padding horizontal (izq y der)             | `px-4` → `1rem` de padding horizontal       |
+| `py-{valor}`      | Padding vertical (arriba y abajo)          | `py-2` → `0.5rem` de padding vertical       |
+| `container`       | Contenedor centrado y con max-width        | `div class="container mx-auto"`             |
+| `box-border`      | Incluye padding y borde en el tamaño total | `div class="box-border"`                    |
+| `overflow-hidden` | Oculta contenido que se desborda           | `div class="overflow-hidden"`               |
+| `aspect-square`   | Mantiene proporción 1:1 (cuadrado)         | `div class="aspect-square"`                 |
+| `aspect-video`    | Proporción 16:9                            | `div class="aspect-video"`                  |
+
+
 ### `flex` en Tailwind
 Flexbox está diseñado para la disposición unidimensional (filas o columnas):
 
