@@ -5,25 +5,25 @@ Tailwind CSS es más que colorcitos y hacer que el `html` se vea monstruoso (hah
 ## **Estructura y organización**
 ### Estructura de la página
 
-| Clase             | Se usa para                                | Ejemplo                                     |
-| ----------------- | ------------------------------------------ | ------------------------------------------- |
-| `h-{valor}`       | Definir altura                             | `h-20` → altura de `5rem`                   |
-| `w-{valor}`       | Definir anchura                            | `w-1/2` → 50% del ancho del contenedor      |
-| `h-screen`        | Altura completa del viewport               | `body class="h-screen"`                     |
-| `w-screen`        | Ancho completo del viewport                | `div class="w-screen"`                      |
-| `min-h-{valor}`   | Altura mínima                              | `min-h-screen` → mínimo: altura de pantalla |
-| `max-w-{valor}`   | Ancho máximo                               | `max-w-xl` → ancho máximo de `36rem`        |
-| `m-{valor}`       | Margen en todos los lados                  | `m-4` → `1rem` de margen                    |
-| `mt-{valor}`      | Margen superior                            | `mt-8` → `2rem` de margen arriba            |
-| `mx-auto`         | Centrar horizontalmente (auto left/right)  | `div class="mx-auto"`                       |
-| `p-{valor}`       | Padding (relleno) en todos los lados       | `p-6` → `1.5rem` de padding                 |
-| `px-{valor}`      | Padding horizontal (izq y der)             | `px-4` → `1rem` de padding horizontal       |
-| `py-{valor}`      | Padding vertical (arriba y abajo)          | `py-2` → `0.5rem` de padding vertical       |
-| `container`       | Contenedor centrado y con max-width        | `div class="container mx-auto"`             |
-| `box-border`      | Incluye padding y borde en el tamaño total | `div class="box-border"`                    |
-| `overflow-hidden` | Oculta contenido que se desborda           | `div class="overflow-hidden"`               |
-| `aspect-square`   | Mantiene proporción 1:1 (cuadrado)         | `div class="aspect-square"`                 |
-| `aspect-video`    | Proporción 16:9                            | `div class="aspect-video"`                  |
+| Clase base         | Se usa para                                  | Ejemplo             | Valores disponibles                                                          |
+| ------------------ | -------------------------------------------- | ------------------- | ---------------------------------------------------------------------------- |
+| `h-`               | Altura                                       | `h-20`              | `0` a `96`, `px`, `full`, `screen`, `min`, `max`, `fit`, etc.                |
+| `w-`               | Anchura                                      | `w-1/2`             | `0` a `96`, `px`, `1/2`, `1/3`, `full`, `screen`, `min`, `max`, `fit`, etc.  |
+| `min-h-`           | Altura mínima                                | `min-h-screen`      | `0`, `full`, `screen`, etc.                                                  |
+| `max-h-`           | Altura máxima                                | `max-h-96`          | `0` a `96`, `full`, `screen`                                                 |
+| `min-w-`           | Ancho mínimo                                 | `min-w-full`        | `0`, `full`, `min`, `max`, etc.                                              |
+| `max-w-`           | Ancho máximo                                 | `max-w-xl`          | `xs`, `sm`, `md`, `lg`, `xl`, `2xl`, `3xl`, etc.                             |
+| `m-`               | Margen general                               | `m-4`               | `0` a `96`, `px`, `auto`, negativos: `-m-4`                                  |
+| `mt-`, `mb-`, etc. | Margen en un solo lado                       | `mt-8`, `ml-2`      | Igual que `m-`                                                               |
+| `mx-`, `my-`       | Margen horizontal / vertical                 | `mx-auto`, `my-2`   | Igual que `m-`, incluye `auto`                                               |
+| `p-`               | Padding general                              | `p-6`               | `0` a `96`, `px`                                                             |
+| `pt-`, `pb-`, etc. | Padding en un solo lado                      | `pt-4`, `pl-1`      | Igual que `p-`                                                               |
+| `px-`, `py-`       | Padding horizontal / vertical                | `px-4`, `py-2`      | Igual que `p-`                                                               |
+| `container`        | Contenedor centrado con max-width automática | `container mx-auto` | Comportamiento predeterminado por Tailwind                                   |
+| `box-border`       | Modelo de caja incluye padding y border      | `box-border`        | `box-border`, `content-box`                                                  |
+| `overflow-`        | Manejo de desbordamiento                     | `overflow-hidden`   | `auto`, `hidden`, `visible`, `scroll`                                        |
+| `aspect-`          | Mantener proporciones de ancho/alto          | `aspect-square`     | `aspect-square`, `aspect-video`, proporciones personalizadas si se habilitan |
+
 
 
 ### `flex` en Tailwind
